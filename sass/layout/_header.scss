@@ -121,7 +121,7 @@
     }
 
     &__carrito-container {
-        flex: 0 0 3em;
+        flex: 0 0 5em;
         background-color: white;
         @media (max-width: 768px) {
             display: none;
@@ -139,11 +139,13 @@
     flex: 0 0 3em;
     position: relative;
     cursor: pointer;
+    box-shadow: 10px 5px 15px 2px black;
 
     &__label {
         
         background-color: black;
         height: 100%;
+        width: 100%;
        
     }
 
