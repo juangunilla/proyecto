@@ -1,0 +1,180 @@
+/***********************************
+             HEADER
+***********************************/
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+        & {
+          flex-direction: column-reverse;  
+        }
+    }
+
+}
+
+#menu {
+    display: none;
+
+    &:checked + .nav-bar {
+        display: block;
+    }
+
+    &:checked ~ .search-bar .menu-toggle__label {
+        background-color: white;
+        border: 1px solid black;
+    }
+}
+
+/***********************************
+             NAV BAR
+***********************************/
+
+.nav-bar {
+    background-color: #0300b7;
+
+    &__nav-list {
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+
+        @media (max-width: 768px) {
+            & {
+                flex-direction: column;
+            }
+        }
+    }
+
+    &__nav-item {
+        text-align: center;
+        background-color: pink;
+    }
+
+    &__nav-link {
+        display: block;
+        background-color: #0300b7;
+        color: #fff;
+        padding: 1em 2em;
+        text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+        & {
+            display: none;
+        }
+    }
+
+}
+
+/***********************************
+             SEARCH BAR
+***********************************/
+
+.search-bar {
+    
+    display: flex;
+    justify-content: space-between;
+
+    &__logo-container,
+    &__form-container {
+        padding: 1em;
+    }
+
+    &__logo-container {
+        background-color: #EB5353;
+    }
+
+    &__form-container {
+        background: linear-gradient(100deg, blue 1%, white 100%);
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+        box-shadow: 10px 5px 10px 0px black;
+    }
+
+    &__form-label {
+        color: white;
+        padding-top: 10px;
+        margin-right: 5px;
+        font-weight: bold;
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__form-search {
+        background-color: white;
+        width: 70%;
+        @media (max-width: 768px) {
+            width: 35vw;
+        }
+    }
+
+    &__form-submit {
+        background-color: #F1F2F3;
+        color: blue;
+        border: 1.8px solid black;
+        padding: 1px;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+
+    &__carrito-container {
+        flex: 0 0 3em;
+        background-color: white;
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+    
+}
+
+/***********************************
+             MENU TOGGLE
+***********************************/
+.menu-toggle {
+    display: none;
+    background-color: black;
+    flex: 0 0 3em;
+    position: relative;
+    cursor: pointer;
+
+    &__label {
+        
+        background-color: black;
+        height: 100%;
+       
+    }
+
+    &__top-bread,
+    &__meat,
+    &__bottom-bread {
+        display: block;
+        background-color: #333;
+        height: .2em;
+        position: absolute;
+        left: .5em;
+        right: .5em;
+    }
+
+    &__top-bread {
+        top: .8em;
+    }
+
+    &__meat {
+        top: 50%;
+        margin-top: -.1em;
+    }
+
+    &__bottom-bread {
+        bottom: .8em;
+    }
+
+    @media (max-width: 768px) {
+        & {
+            display: block
+        }
+    }
+
+}

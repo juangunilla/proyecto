@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="main-header">
+        <input type="checkbox" id="menu" />
+  
+        <nav class="nav-bar">
+          <ul class="nav-bar__nav-list">
+            <li class="nav-bar__nav-item">
+              <a href="#" class="nav-bar__nav-link"> Inicio </a>
+            </li>
+            <li class="nav-bar__nav-item">
+              <a href="#" class="nav-bar__nav-link"> Alta </a>
+            </li>
+            <li class="nav-bar__nav-item">
+              <a href="#" class="nav-bar__nav-link"> Contacto </a>
+            </li>
+            <li class="nav-bar__nav-item">
+              <a href="#" class="nav-bar__nav-link"> Nosotros </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- nav-bar -->
+  
+        <div class="search-bar">
+          <div class="search-bar__logo-container">Logo</div>
+          <form action="" class="search-bar__form-container">
+            <label for="busqueda" class="search-bar__form-label">Buscar</label>
+            <input type="search" class="search-bar__form-search" id="busqueda" />
+            <input type="submit" class="search-bar__form-submit" value="Buscar" />
+          </form>
+          <div class="search-bar__carrito-container">C</div>
+          <div class="menu-toggle">
+            <label for="menu" class="menu-toggle__label">
+              <span class="menu-toggle__top-bread"></span>
+              <span class="menu-toggle__meat"></span>
+              <span class="menu-toggle__bottom-bread"></span>
+            </label>
+          </div>
+        </div>
+        <!-- search-bar -->
+      </header>
+    <h1>Contacto</h1>
+    <p class="sub">Completa el formulario y nos pondremos en contacto</p>
+
+
+    <div class="container">
+        <form action="">
+          <div class="row">
+            <div class="col-25">
+              <label for="nombre">Nombre</label>
+            </div>
+            <div class="col-75">
+              <input class="input-form" type="text" id="nombre" name="nombre" placeholder="Su nombre...">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="apellido">Apellido</label>
+            </div>
+            <div class="col-75">
+              <input class="input-form" type="text" id="apellido" name="apellido" placeholder="Su apellido...">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="correo">Correo</label>
+            </div>
+            <div class="col-75">
+              <input class="input-form" type="email" placeholder="Su correo.." id="correo">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="asunto">Asunto</label>
+            </div>
+            <div class="col-75">
+              <textarea class="input-form" id="asunto" name="asunto" placeholder="Motivo del contacto.." ></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <button class="form-submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+
+</body>
+</html>
